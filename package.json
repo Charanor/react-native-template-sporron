@@ -1,0 +1,19 @@
+{
+  "name": "react-native-template-sporron",
+  "version": "1.0.0",
+  "description": "React Native template created by Jesper Sporron",
+  "author": "Jesper Sporron <jesper.sporron@gmail.com>",
+  "license": "MIT",
+  "files": [
+    "template",
+    "template.config.js"
+  ],
+  "keywords": [
+    "react-native",
+    "template",
+    "typescript",
+    "eslint",
+    "prettier",
+    "boilerplate"
+  ]
+}
