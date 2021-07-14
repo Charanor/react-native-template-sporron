@@ -1,17 +1,16 @@
-import React, { useEffect } from "react";
+import { StoreProvider } from "easy-peasy";
+import React from "react";
 import { SafeAreaView, StyleSheet, Text } from "react-native";
-import { GlobalStateProvider } from "./libs/global-state";
-import { init as initI18n } from "./libs/i18n";
+
+import store from "./libs/state/store";
 
 function App() {
-	useEffect(initI18n, []);
-
 	return (
-		<GlobalStateProvider>
+		<StoreProvider store={store}>
 			<SafeAreaView style={styles.container}>
 				<Text>HelloWorld Template!</Text>
 			</SafeAreaView>
-		</GlobalStateProvider>
+		</StoreProvider>
 	);
 }
 
